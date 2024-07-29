@@ -1,0 +1,456 @@
+.bg-container{
+    background-color: black;
+    padding: 10px;
+}
+.card-display{
+    display: flex;
+}
+.home-section{
+    background-color: rgba(40, 40, 40, 0.716);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.home-para{
+    color: aliceblue;  
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: pointer;
+    border: none;
+}
+.home-para1{
+    color: aliceblue;  
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color:  rgba(40, 40, 40, 0.716);
+    margin-left: 10px;
+
+}
+
+.home-para:hover{
+    color: gray;
+}
+.library-section{
+    background-color: rgba(40, 40, 40, 0.716);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#plus{
+    padding-right: 5px;
+    height: 30px;
+    width: 30px;
+}
+#arrow{
+    padding-left: 5px;
+    height: 30px;
+    width: 30px;
+}
+.button1{
+    background-color: rgb(57, 54, 54);
+    border-width: 0px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    padding: 6px;
+    margin: 10px;
+    width: 80px;
+    font-weight: 500px;
+    
+}
+.library-para{
+    color: gray;  
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 120px;
+    cursor: pointer;
+
+}
+.library-para:hover{
+    color: aliceblue;
+}
+.recent-section{
+    background-color: rgba(40, 40, 40, 0.716);
+    padding: 5px;
+}
+.recent-para{
+    color: gray;  
+    font-size: 15px;
+    padding-left: 250px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.recent-para:hover{
+    color: aliceblue;
+}
+.image{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+.songs-container{
+    transition: all 0.5 ease;
+}
+#search1:hover{
+    background-color:black;
+    opacity:0.7;
+    cursor:pointer;
+    transform: scale(1);
+    border-radius:9px;
+    box-shadow: 8px 8px 9px 9px;
+}
+.eft-row:hover{
+    background-color:black;
+    opacity:0.7;
+    cursor:pointer;
+    transform: scale(1);
+    border-radius:9px;
+}
+.box{
+    box-sizing: border-box;
+    width: 25vw;
+}
+
+.song {
+    position: relative;
+    display: inline;
+}
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .overlay svg {
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .song:hover .overlay {
+    opacity: 1;
+  }
+
+
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .overlay1 svg {
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .song:hover .overlay1 {
+    opacity: 1;
+  }
+  
+  
+.artist{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.movie{
+    color: grey;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.card-container{
+    background-color: rgba(40, 40, 40, 0.716);
+    padding: 10px;
+    
+}
+
+.bottom-container{
+    background-color: black;
+    box-sizing: border-box;
+    
+}
+.card-container1{
+    background-color: rgba(40, 40, 40, 0.716);
+}
+#round{
+    background-color: black;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#round:hover{
+    /* box-shadow: 1px 1px 1px 1px; */
+    border:none;
+    padding: 5px;
+    transform: scale(1.1);
+    
+}
+.align{
+    align-items: flex-end;
+    display: flex;
+}
+
+.explore{
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    color: black;
+    margin-right: 8px;
+    font-size: 15PX;
+    cursor: pointer;
+    border-width: 0px;
+    transition: all 0.4s ease;
+    box-sizing: border-box;
+}
+.explore:hover{
+    /* box-shadow: 1px 1px 1px 1px; */
+    border:none;
+    transform: scale(1.1);
+    
+}
+.round1{
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+    height: 28px;
+    margin-right: 8PX;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.install{
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-top: 2px;
+    text-align: center;
+    cursor: pointer;
+    border-width: 0px;
+    box-sizing: border-box;
+}
+.round1:hover{
+    /* box-shadow: 1px 1px 1px 1px; */
+    border:none;
+    padding: 5px;
+    transform: scale(1.1);
+    
+}
+.round2{
+    background-color: black;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: aqua;
+    margin-left: 5px;
+    cursor: pointer;
+    border-width: 0px;
+    box-sizing: border-box;
+}
+.round2:hover{
+    /* box-shadow: 1px 1px 1px 1px; */
+    border:none;
+    padding: 5px;
+    transform: scale(1.1);
+    
+}
+.button2{
+    background-color: rgb(57, 54, 54);
+    border-width: 0px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    margin: 5px;
+    padding: 6px;
+    font-weight: 500px;   
+    box-sizing: border-box; 
+}
+.button2:hover{
+    background-color: white;
+    color: black;
+}
+
+.songsList-display{
+    display: flex;
+}
+
+.para {
+    color: whitesmoke;
+    margin-top: 13px;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: bold;
+    font-family: Roboto;
+    box-sizing: fixed;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    width: 25vw;
+}
+.box{
+    box-sizing: border-box;
+    width: 18vw;
+}
+.movie-con {
+    display: flex;
+    background-color: rgba(42, 40, 40, 0.716);
+    border-width: 6px;
+    color: white;
+    font-family: Roboto;
+    height: 7vh;
+    width: 50%;
+    box-sizing: fixed;
+    margin: 5px;
+}
+.movie-con:hover{
+    background-color: black;
+    opacity:0.7;
+    cursor:pointer;
+    transform: scale(1);
+    border-radius:9px;
+
+}
+.image1 {
+    height: 7vh;
+    width: 7vw;
+}
+
+.card-container2{
+    background-color: black;
+    padding: 5px;
+}
+.card-container3{
+    background-color: black;
+    padding: 5px;
+}
+.anchor{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.anchor1{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 40vw;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    
+}
+.anchor:hover{
+    color: gray;
+}
+.anchor1:hover{
+    color: gray;
+}
+.recentCard {
+    display: ;
+}
+.playlist-card{
+    background-color: rgba(42, 40, 40, 0.716);
+    height: 30vh;
+    margin: 1%;
+    border-radius: 10px;
+    
+}
+.playlist-card:hover{
+    border:none;
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+    overflow: hidden;
+}
+.para1 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 3px;
+}
+
+.para2 {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Roboto;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.image2 {
+    height: 20vh;
+    cursor: pointer;
+
+}
+
+
+.recentHeading {
+    color: white;
+    padding: 5px;
+    font-size: 40px;
+    font-family: Roboto;
+}
+.songs-container-list{
+    background-color: black;
+    padding: 10px;
+}
+.play-control{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title-heading{
+    color: aliceblue;
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title-artist{
+    color: aliceblue;
+    font-size: 10px;
+    margin-left: 10px;
+}
+#icon{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#icon1 :hover{
+    fill: red;
+    cursor: pointer;
+}
+

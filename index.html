@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="responsive.css">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+  </head>
+  <link rel="shortcut icon" href="./images/th (16).jpeg" type="image/x-icon">
+  <body>
+    <div class="row">
+        <div class="col-12 col-lg-4">
+            <div class="bg-container">
+                <div class="home-section">
+                    <div class="d-flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                        </svg>
+                        <p class="home-para">Home</p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                        <input type="text" placeholder="Search" class="home-para1">
+                    </div>
+                </div>
+                <div class="library-section">
+                    <div class="d-flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="grey" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                            <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+                            <path fill-rule="evenodd" d="M12 3v10h-1V3z"/>
+                            <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1z"/>
+                            <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        <p class="library-para">Your Library</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="plus" width="20" height="20" fill="grey" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="arrow" width="20" height="20" fill="gray" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <button class="button1">Playlists</button>
+                        <button class="button1">Artists</button>
+                    </div>
+                </div>
+                <div class="recent-section">
+                    <div class="d-flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="grey" id="search1" class="bi bi-search"  viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                        <p class="recent-para">Recents</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="grey" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                        </svg>
+                    </div>
+                    <div class="songs-container">
+
+                        <div id="KrishnaSong" class="eft-row d-flex flex-row">
+                            <img src="./images/th (7).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Sri RadhaKrishna</h3>
+                                    <h5 class="movie">Mahabharath</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="maharshiSong" class="eft-row d-flex flex-row">
+                            <img src="./images/th (2).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Mahesh Babu</h3>
+                                    <h5 class="movie">Maharshi</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="BajrangSong" class="eft-row d-flex flex-row">
+                            <img src="./images/th (9).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Bajrang</h3>
+                                    <h5 class="movie">Hanuman</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="MahanatiSong" class="eft-row d-flex flex-row">
+                            <img src="./images/th (3).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Keerthy Suresh</h3>
+                                    <h5 class="movie">Mahanati</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="TarakSong" class="eft-row d-flex flex-row">
+                            <img src="./images/download (1).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Tarak NTR</h3>
+                                    <h5 class="movie">Ranam Roudram Ruthiram</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="Super30Song" class="eft-row d-flex flex-row">
+                            <img src="./images/download (2).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Hrithik Roshan</h3>
+                                    <h5 class="movie">Super 30</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="BahubaliSong" class="eft-row d-flex flex-row">
+                            <img src="./images/th (8).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Prabhas</h3>
+                                    <h5 class="movie">Bahubali</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="RajaRaniSong" class="eft-row d-flex flex-row">
+                            <img src="./images/download (3).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Arya Surya</h3>
+                                    <h5 class="movie">Raja Rani</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="SPBSong" class="eft-row d-flex flex-row">
+                            <img src="./images/th (11).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">SPB Balu</h3>
+                                    <h5 class="movie">Kaladi Kannmanii</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="GunturSong" class="eft-row d-flex flex-row">
+                            <img src="./images/th (12).jpeg" class="image">
+                            <div class="song">
+                                <div class="box p-2">
+                                    <h3 class="artist">Mahesh Babu</h3>
+                                    <h5 class="movie">Guntur Karam</h5>
+                                </div>
+                                <div class="overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8 col-12">
+            <div class="bottom-container">
+                <div class="card-container">
+                    <div class="d-flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="round" width="16" height="16" fill="white" class="bi bi-caret-left" viewBox="0 0 16 16">
+                            <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="round" width="16" height="16" fill="white" class="bi bi-caret-right" viewBox="0 0 16 16">
+                            <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+                        </svg> 
+                        <div class="align d-flex flex-row justify-content-end">
+                            <button class="explore">Explore Premium</button>
+                            <div class="round1 d-flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                                </svg>
+                                <button class="install">Install App</button>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="round" width="16" height="16" fill="white" class="bi bi-bell" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                            </svg>
+                            <button class="round2">A</button>
+                        </div>
+                        
+                    </div>
+                    <div class="mt-3">
+                        <button class="button2">All</button>
+                        <button class="button2">Music</button>
+                        <button class="button2">Podcasts</button>
+                    </div>
+                </div>
+
+                
+                <div class="card-container1">
+                    <div>
+                        <div class="songsList-display mt-5">
+                            <div class="movie-con">
+                                <img class="image1" src="./images/th (6).jpeg">
+                                <div class="song">
+                                    <p class="para">Radha Krishna</p>
+                                    <div class="overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="movie-con">
+                                <img class="image1" src="./images/th (3).jpeg" />
+                                <div class="song">
+                                    <p class="para">Mahanati</p>
+                                    <div class="overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="songsList-display">
+                            <div class="movie-con">
+                                <img class="image1" src="./images/download (8).jpeg">
+                                <div class="song">    
+                                    <p class="para">Sarkar Vari Paata</p>
+                                    <div class="overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="song" class="movie-con" onclick="display('sectionsongInfo')">
+                                <img class="image1" src="./images/download (4).jpeg">
+                                <div class="song">
+                                    <p class="para">Maharshi</p>
+                                    <div class="overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                        <div class="songsList-display">
+                            <div class="movie-con">
+                                <img class="image1" src="./images/OIP (6).jpeg">
+                                <div class="song">
+                                    <p class="para">Antharikshayam</p>
+                                    <div class="overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="movie-con">
+                                <img class="image1" src="./images/OIP (5).jpeg" />
+                                <div class="song">
+                                    <p class="para">Lord Hanuman</p>
+                                    <div class="overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="songsList-display">
+                            <div class="movie-con">
+                                <img class="image1" src="./images/OIP (3).jpeg">
+                                <div class="song">
+                                    <p class="para">Super 30</p>
+                                    <div class="overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-con">
+                                <img class="image1" src="./images/OIP (2).jpeg" />
+                                <div class="song">
+                                    <p class="para">Fun & Frustration</p>
+                                    <div class="overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container2">
+                    <div class="playlists">
+                        <div class="d-flex flex-row">
+                            <a class="anchor" href="#">Made by Anji Chinni</a>
+                            <a class="anchor1">Show all</a>
+                        </div>
+                        
+                        
+                            <div class="row recentCard">
+                                
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img class="col-lg-12 col-12 image2" src="./images/download (10).jpeg">
+                                        <p class="para1">90s Mass Songs<br><span class="para2">weekly mixtape of fresh music.Enjoy new...</span></p>
+                                            <div class="overlay1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                </div>
+                        
+            
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img class="col-lg-12 col-12 image2" src="./images/download (13).jpeg">
+                                        <p class="para1">DJ Songs<br><span class="para2">Give Relax...which gets free from stress..</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img src="./images/download (11).jpeg" class="col-lg-12 col-12 image2" >
+                                        <p class="para1">Love Songs<br><span class="para2">Love is everything. Njoyy the music</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img src="./images/OIP (12).jpeg" class="col-lg-12 col-12 image2" >
+                                        <p class="para1">Classical Music<br><span class="para2">The art of culture..Fell the peace....</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img src="./images/download (14).jpeg" class="col-lg-12 col-12 image2" >
+                                        <p class="para1">Music band<br><span class="para2">Love is everything. Njoyy the music</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="playlist-card col-lg-2 col-3 d-lg-none">
+                                    <div class="song">
+                                        <img src="./images/download (15).jpeg" class="col-lg-12 col-12 image2" >
+                                        <p class="para1">Classical Music<br><span class="para2">The art of culture..Fell the peace....</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                    
+                    </div>
+                    <div class="card-container3">
+                        <div>
+                            <p class="anchor">Recently Played</p>
+                            <div class=" row recentCard">
+                                
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img class="col-lg-12 col-12 image2 mr-3" src="./images/download (12).jpeg">
+                                        <p class="para1">Super 30<br><span class="para2">The art of culture..Fell the peace....</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img class="col-lg-12 col-12 image2" src="./images/OIP (10).jpeg">
+                                        <p class="para1">Fasak Music<br><span class="para2">The art of culture..Fell the peace....</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                </div>
+                                </div>
+            
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img class="col-lg-12 col-12 image2" src="./images/OIP (9).jpeg">
+                                        <p class="para1">Love Failure<br><span class="para2">The art of culture..Fell the peace....</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img class="col-lg-12 col-12 image2 mr-3" src="./images/download (16).jpeg">
+                                        <p class="para1">Nature Beauty<br><span class="para2">The art of culture..Fell the peace....</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="playlist-card col-lg-2 col-3">
+                                    <div class="song">
+                                        <img class="col-lg-12 col-12 image2" src="./images/th (13).jpeg">
+                                        <p class="para1">Beauty<br><span class="para2">The art of culture..Fell the peace....</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                            </div>
+            
+                                <div class="playlist-card col-lg-2 col-3 d-inline d-lg-none">
+                                    <div class="song">
+                                        <img class="col-lg-12 col-12 image2" src="./images/th (14).jpeg (9).jpeg">
+                                        <p class="para1">Awesome<br><span class="para2">The art of culture..Fell the peace....</span></p>
+                                        <div class="overlay1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+
+    <div id="songContainer" class="songs-container-list col-12 col-lg-12  fixed-bottom p-4">
+        <div class="d-flex flex-row">
+            <img id="songImg">
+            <div class="ml-3">
+                <h1 class="title-heading" id="songTitle"></h1>
+                <p class="title-artist" id="songArtist"></p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" id="icon1" width="16" height="16" fill="gray" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+            <div>
+                
+            </div>
+            <audio id="audio" autoplay controller controls class="play-control">
+            
+            </audio>
+            <div class="p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="grey" class="bi bi-file-play" viewBox="0 0 16 16">
+                    <path d="M6 10.117V5.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43z"/>
+                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
+                </svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="grey" class="bi bi-mic" viewBox="0 0 16 16">
+                <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="grey" class="bi bi-file-music" viewBox="0 0 16 16">
+                    <path d="M10.304 3.13a1 1 0 0 1 1.196.98v1.8l-2.5.5v5.09c0 .495-.301.883-.662 1.123C7.974 12.866 7.499 13 7 13s-.974-.134-1.338-.377C5.302 12.383 5 11.995 5 11.5s.301-.883.662-1.123C6.026 10.134 6.501 10 7 10c.356 0 .7.068 1 .196V4.41a1 1 0 0 1 .804-.98z"/>
+                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                </svg>  
+            </div>
+             
+        </div>
+    </div>
+    
+<script src="responsive.js"></script>
+
+
+
+  </body>
+</html>
